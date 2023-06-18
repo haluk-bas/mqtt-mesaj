@@ -1,0 +1,37 @@
+﻿<Window x:Class="MQTT_Mesaj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MQTT_Mesaj"
+        mc:Ignorable="d"
+        Title="MQTT-Mesaj" Height="500" Width="350">
+    <Grid Background="#9DB2BF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="1" Grid.ColumnSpan="3" Name="txt1" Margin="5" Background="#DDE6ED" FontSize="16" Foreground="#27374D" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"></TextBox>
+        <TextBox Grid.Row="0" Grid.Column="2" Margin="0 5 5 0" Name="isim" Background="#DDE6ED" Foreground="#27374D"></TextBox>
+        <TextBox x:Name="mesaj" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="3"  Margin="5 0 5 5" Background="#DDE6ED" Foreground="#27374D" FontSize="16"></TextBox>
+
+        <Label Grid.Row="4" Grid.Column="0" Margin="5 0 0 0" Foreground="#27374D">Mesaj</Label>
+        <Label Grid.Column="1" HorizontalAlignment="Right" Foreground="#27374D">İsim</Label>
+
+        <Button Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3"  Name="gonderBtn" Margin="5" Grid.RowSpan="4" Click="Button_Click" Background="#27374D" Foreground="#DDE6ED" FontSize="16" IsDefault="True">Gönder</Button>
+        <Button Grid.Column="0" Grid.Row="0"  Background="#FFF18181" Margin="5 4 5 0" Click="Button_Click_1" Foreground="#27374D">Mesajları Sil</Button>
+
+    </Grid>
+</Window>
